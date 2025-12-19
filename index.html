@@ -3,15 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shreyas | Mechanical Engineering Portfolio</title>
+<title>Shreyas Sanjay Gade | Mechanical Engineering Portfolio</title>
 
 <style>
 :root{
-  --accent:#4cc9f0;
+  --accent:#5eead4;
+  --accent-soft:#38bdf8;
   --bg:#020617;
-  --card:#0b1220;
+  --bg-2:#050b1f;
+  --card:#0a1124;
   --border:rgba(255,255,255,0.08);
-  --muted:#b6c2e2;
+  --muted:#b8c3e6;
+  --text:#eef2ff;
 }
 
 *{
@@ -22,57 +25,73 @@
 }
 
 body{
-  background:linear-gradient(180deg,#020617,#050b1f 70%);
-  color:#eaeaf0;
-  line-height:1.85;
-  letter-spacing:.3px;
+  background:radial-gradient(circle at top,var(--bg-2),var(--bg) 70%);
+  color:var(--text);
+  line-height:1.9;
 }
 
+/* LAYOUT */
 .container{
   max-width:1200px;
   margin:auto;
-  padding:70px 24px;
+  padding:80px 24px;
 }
 
 /* HEADER */
 header{
   text-align:center;
-  padding:140px 20px 110px;
-  position:relative;
+  padding:160px 20px 120px;
+}
+
+.profile{
+  width:180px;
+  height:180px;
+  margin:0 auto 34px;
+  border-radius:50%;
+  padding:6px;
+  background:linear-gradient(135deg,var(--accent),var(--accent-soft));
+  box-shadow:0 0 55px rgba(94,234,212,.45);
+}
+
+.profile img{
+  width:100%;
+  height:100%;
+  border-radius:50%;
+  object-fit:cover;
+  border:4px solid var(--bg);
 }
 
 header h1{
-  font-size:3.8rem;
+  font-size:3.6rem;
   font-weight:600;
-  letter-spacing:2px;
+  letter-spacing:1.8px;
 }
 
 header p{
   margin-top:18px;
-  font-size:1.3rem;
+  font-size:1.35rem;
   color:var(--muted);
 }
 
 header::after{
   content:"";
-  width:140px;
+  width:170px;
   height:3px;
   background:linear-gradient(90deg,transparent,var(--accent),transparent);
   display:block;
-  margin:45px auto 0;
+  margin:55px auto 0;
 }
 
-/* SECTION */
+/* SECTIONS */
 section{
-  margin:110px 0;
+  margin:130px 0;
 }
 
 h2{
-  font-size:2.5rem;
-  font-weight:500;
-  margin-bottom:45px;
+  font-size:2.6rem;
+  margin-bottom:50px;
+  padding-left:24px;
   position:relative;
-  padding-left:22px;
 }
 
 h2::before{
@@ -81,72 +100,68 @@ h2::before{
   left:0;
   top:10px;
   width:6px;
-  height:70%;
-  background:var(--accent);
+  height:72%;
+  background:linear-gradient(180deg,var(--accent),var(--accent-soft));
   border-radius:20px;
 }
 
 p{
   max-width:900px;
-  font-size:1.08rem;
+  font-size:1.1rem;
   color:var(--muted);
 }
 
 /* GRID */
 .grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:34px;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:40px;
 }
 
 /* CARD */
 .card{
-  background:linear-gradient(180deg,#0b1220,#060b18);
-  padding:38px;
-  border-radius:22px;
+  background:linear-gradient(180deg,#0b1430,#070c1d);
+  padding:42px;
+  border-radius:26px;
   border:1px solid var(--border);
-  box-shadow:0 30px 80px rgba(0,0,0,.65);
+  box-shadow:0 35px 90px rgba(0,0,0,.75);
   transition:.45s ease;
 }
 
 .card:hover{
-  transform:translateY(-12px);
-  box-shadow:0 45px 110px rgba(0,0,0,.9);
+  transform:translateY(-14px);
+  box-shadow:0 55px 130px rgba(0,0,0,.95);
 }
 
 .card h3{
-  font-size:1.35rem;
-  font-weight:500;
-  margin-bottom:20px;
+  font-size:1.45rem;
+  margin-bottom:24px;
   color:var(--accent);
 }
 
 /* TAG */
 .tag{
   display:inline-block;
-  padding:9px 18px;
-  margin:8px 8px 0 0;
+  padding:10px 20px;
+  margin:10px 10px 0 0;
   border-radius:999px;
-  background:rgba(255,255,255,0.04);
+  background:rgba(255,255,255,0.05);
   border:1px solid var(--border);
-  font-size:.92rem;
-  color:#dde4ff;
-  transition:.3s;
+  font-size:.95rem;
 }
 
 .tag:hover{
-  background:var(--accent);
+  background:linear-gradient(135deg,var(--accent),var(--accent-soft));
   color:#020617;
 }
 
 /* FOOTER */
 footer{
   text-align:center;
-  padding:70px 20px;
-  color:#8b97b7;
+  padding:90px 20px;
+  color:#9aa6cc;
   border-top:1px solid var(--border);
-  margin-top:120px;
-  font-size:.95rem;
+  margin-top:150px;
 }
 </style>
 </head>
@@ -154,7 +169,10 @@ footer{
 <body>
 
 <header>
-  <h1>Shreyas</h1>
+  <div class="profile">
+    <img src="/mnt/data/1c5734c2-0c69-43d7-bc02-51d5c5b35f1f.jpg" alt="Shreyas Sanjay Gade">
+  </div>
+  <h1>Shreyas Sanjay Gade</h1>
   <p>Mechanical Engineering • Core • Design • Manufacturing</p>
 </header>
 
@@ -163,19 +181,19 @@ footer{
 <section>
 <h2>Professional Summary</h2>
 <p>
-Mechanical Engineering student with strong academic grounding in core engineering
-principles, design methodology, and manufacturing systems. Focused on precision,
-efficiency, and engineering discipline with a long-term vision of contributing
-to high-impact industrial and mechanical innovation.
+Mechanical Engineering student with strong academic grounding in core mechanical
+principles, engineering design methodology, and manufacturing systems. Focused on
+precision, reliability, and disciplined engineering practices aligned with modern
+industrial standards.
 </p>
 </section>
 
 <section>
 <h2>Career Objective</h2>
 <p>
-To grow as a high-caliber Mechanical Engineer by delivering reliable design solutions,
-process optimization, and technically sound engineering practices aligned with
-industrial standards and safety norms.
+To develop into a high-impact Mechanical Engineer by contributing to efficient design
+solutions, optimized manufacturing processes, and technically sound engineering
+decisions in professional industrial environments.
 </p>
 </section>
 
@@ -184,7 +202,7 @@ industrial standards and safety norms.
 <div class="grid">
 
 <div class="card">
-<h3>Core Mechanical</h3>
+<h3>Core Mechanical Engineering</h3>
 <span class="tag">Thermodynamics</span>
 <span class="tag">Strength of Materials</span>
 <span class="tag">Theory of Machines</span>
@@ -193,7 +211,7 @@ industrial standards and safety norms.
 </div>
 
 <div class="card">
-<h3>Design Engineering</h3>
+<h3>Design & Analysis</h3>
 <span class="tag">Machine Design</span>
 <span class="tag">Engineering Drawing</span>
 <span class="tag">GD&T Basics</span>
@@ -223,48 +241,17 @@ industrial standards and safety norms.
 </section>
 
 <section>
-<h2>Academic & Technical Projects</h2>
-<div class="grid">
-
-<div class="card">
-<h3>Solar Powered Water Pump</h3>
-<p>
-Engineering design and feasibility analysis of a solar-driven water pumping system
-focused on energy efficiency and sustainable rural deployment.
-</p>
-</div>
-
-<div class="card">
-<h3>IC Engine Performance Analysis</h3>
-<p>
-Detailed study of internal combustion engine working, performance parameters,
-and efficiency enhancement techniques.
-</p>
-</div>
-
-<div class="card">
-<h3>CAD Design Portfolio</h3>
-<p>
-Professional-grade 2D drafting and 3D modeling of mechanical components and assemblies
-using AutoCAD and SolidWorks.
-</p>
-</div>
-
-</div>
-</section>
-
-<section>
 <h2>Education</h2>
 <div class="card">
 <h3>Bachelor of Engineering – Mechanical Engineering</h3>
-<p>2025 – 2029</p>
+<p>2024 – 2029</p>
 </div>
 </section>
 
 </div>
 
 <footer>
-© 2025 Shreyas • Premium Mechanical Engineering Portfolio
+© 2025 Shreyas Sanjay Gade • Ultra-Premium Mechanical Engineering Portfolio
 </footer>
 
 </body>
